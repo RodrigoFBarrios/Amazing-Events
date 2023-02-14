@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 60%;
+}
+
+img.logo {
+    width: 5rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.conteiner-flex {
+    display: flex;
+    justify-content: space-around;
+    min-height: 150px;
+
+}
+
+.home-section {
+    display: flex;
+    justify-content: center;
+
+}
+
+h2 {
+    display: flex;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    align-items: flex-end;
+    min-height: 100px;
+}
