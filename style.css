@@ -4,19 +4,30 @@
     padding: 0;
 }
 
-html {
-    height: 100%;
-}
+
 
 body {
     display: flex;
     flex-direction: column;
-    min-height: 60%;
+    height: 100vb;
+    width: 100%;
 }
+
 
 img.logo {
     width: 5rem;
 }
+
+.card-img-top{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+div.card-body{
+    background-color:blanchedalmond;
+}
+
 
 main {
     display: flex;
@@ -32,17 +43,31 @@ main {
 
 .home-section {
     display: flex;
-    justify-content: center;
+    background-color:lightcoral ;
+    flex-direction: column;
 
 }
 
 h2 {
     display: flex;
-    text-align: center;
+    justify-content: center;
+    color: blue;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: capitalize;
+
+}
+.titulo-section{
+    color: white;
+}
+
+h5.card-title{
+    color: blue;
 }
 
 footer {
     display: flex;
-    align-items: flex-end;
+    background-color: skyblue;
+    align-items: center;
     min-height: 100px;
+   
 }
