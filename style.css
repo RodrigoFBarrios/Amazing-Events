@@ -64,6 +64,7 @@ h5.card-title{
     color: blue;
 }
 
+<<<<<<< HEAD
 .stats-tabla{
     display: flex;
     background-color: cadetblue;
@@ -73,6 +74,8 @@ h5.card-title{
     margin: 1px ;
     padding: 1px;
 } */
+=======
+>>>>>>> cf7461af33e5fb2081b2996b5eeb102df7482069
 footer {
     display: flex;
     background-color: skyblue;
