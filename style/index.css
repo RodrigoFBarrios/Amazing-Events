@@ -5,33 +5,23 @@
 }
 
 
-
 body {
     display: flex;
     flex-direction: column;
-    height: 100vb;
-    width: 100%;
+    min-height: 100vh;
 }
 
-
-img.logo {
+.logo {
     width: 5rem;
 }
 
-.card-img-top{
-    width: 200px;
-    height: 200px;
+.card-img-top {
+    height: 300px;
     object-fit: cover;
 }
 
-div.card-body{
-    background-color:blanchedalmond;
-}
-
-
-main {
-    display: flex;
-    flex-direction: column;
+div.card-body {
+    background-color: blanchedalmond;
 }
 
 .conteiner-flex {
@@ -43,43 +33,48 @@ main {
 
 .home-section {
     display: flex;
-    background-color:lightcoral ;
+    background-color: lightcoral;
     flex-direction: column;
 
+}
+
+.form-label {
+    margin: 1px;
+    padding: 5px;
+}
+
+.mb-3 {
+    margin: 1px;
+    padding: 1px;
 }
 
 h2 {
     display: flex;
     justify-content: center;
     color: blue;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-transform: capitalize;
 
 }
-.titulo-section{
+
+.titulo-section {
     color: white;
 }
 
-h5.card-title{
+h5.card-title {
     color: blue;
 }
 
-<<<<<<< HEAD
-.stats-tabla{
+.stats-tabla {
     display: flex;
     background-color: cadetblue;
 }
-/* .td-evento1, .td-evento2 ,.td-evento3{
-    background-color: coral;
-    margin: 1px ;
-    padding: 1px;
-} */
-=======
->>>>>>> cf7461af33e5fb2081b2996b5eeb102df7482069
+
 footer {
     display: flex;
     background-color: skyblue;
     align-items: center;
     min-height: 100px;
-   
+
+
 }
