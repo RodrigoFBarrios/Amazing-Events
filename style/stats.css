@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.logo {
+    width: 5rem;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    background-color: lightcoral;
+}
+
+footer {
+    display: flex;
+    background-color: skyblue;
+    align-items: center;
+    min-height: 100px;
+
+
+}
