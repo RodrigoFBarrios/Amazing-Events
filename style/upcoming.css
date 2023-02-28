@@ -79,6 +79,11 @@ footer {
 
 }
 
+div.card-body {
+    background-color: blanchedalmond;
+}
+
+
 #card_conteiner{
     background-color: lightcoral;
 }

@@ -21,9 +21,18 @@ body {
     flex-direction: column;
 
 }
+
+div.card-body {
+    background-color: blanchedalmond;
+}
+
 h2 {
     display: flex;
     justify-content: center;
+}
+
+.flex-grow-1{
+    background-color: lightcoral;
 }
 
 footer {
