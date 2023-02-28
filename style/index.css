@@ -65,10 +65,7 @@ h5.card-title {
     color: blue;
 }
 
-.stats-tabla {
-    display: flex;
-    background-color: cadetblue;
-}
+
 
 footer {
     display: flex;
