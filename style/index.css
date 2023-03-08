@@ -24,7 +24,7 @@ body {
     color: white;
     background-image: radial-gradient(circle at 105% 68.3%,
             #2f2246 0%,
-            #58b980 50%,
+            #b7119b 50%,
             #702e5f 100%);
     min-height: 50px;
 }
@@ -55,6 +55,58 @@ body {
     --bs-btn-disabled-border-color: #6c757d;
 }
 
+.cat-ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0px;
+    margin: 0;
+    list-style-type: none;
+}
+
+.check-slide {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 22px;
+    width: 100px;
+    padding: 0px 4px 0px 5px;
+    margin: 5px 0px;
+}
+
+.check-slide label {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 12px;
+    padding: 0px 0px 0px 0px;
+}
+
+.label-chk {
+    display: block;
+    position: relative;
+    top: -4px;
+    left: -10px;
+}
+
+.text-search {
+    flex-shrink: 0;
+    width: 190px;
+    margin-left: 3px;
+
+}
+
+.input-search {
+
+    height: 33px;
+    border: 1px solid rgb(43, 13, 13);
+    border-radius: 5px;
+
+}
+
+.input-search:focus {
+    box-shadow: none;
+    border: 1px solid rgb(63, 28, 28);
+}
+
 .card-img-top {
     height: 300px;
     object-fit: cover;
@@ -73,43 +125,18 @@ div.card-body {
 
 .home-section {
     display: flex;
-    background-color: lightcoral;
+   
     flex-direction: column;
 
 }
 
-.form-label {
-    margin: 1px;
-    padding: 5px;
-}
-
-.mb-3 {
-    margin: 1px;
-    padding: 1px;
-}
-
-h2 {
-    display: flex;
-    justify-content: center;
-    color: blue;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-transform: capitalize;
-
-}
-
-.titulo-section {
-    color: white;
-}
-
-h5.card-title {
-    color: blue;
-}
-
-
-
 footer {
     display: flex;
-    background-color: skyblue;
+    background-image: radial-gradient(circle at 105% 68.3%,
+            #2f2246 0%,
+            #b7119b 50%,
+            #702e5f 100%);
+    min-height: 50px;
     align-items: center;
     min-height: 100px;
 

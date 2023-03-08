@@ -24,10 +24,11 @@ body {
     color: white;
     background-image: radial-gradient(circle at 105% 68.3%,
             #2f2246 0%,
-            #58b980 50%,
+            #b7119b 50%,
             #702e5f 100%);
     min-height: 50px;
 }
+
 
 .aside-hbar p {
     font-size: 24px;
@@ -73,46 +74,16 @@ div.card-body {
 
 .home-section {
     display: flex;
-    background-color: lightcoral;
     flex-direction: column;
-
-}
-
-.form-label {
-    margin: 1px;
-    padding: 5px;
-}
-
-.mb-3 {
-    margin: 1px;
-    padding: 1px;
-}
-
-h2 {
-    display: flex;
-    justify-content: center;
-    color: blue;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-transform: capitalize;
-
-}
-
-.titulo-section {
-    color: white;
-}
-
-h5.card-title {
-    color: blue;
-}
-
-.stats-tabla {
-    display: flex;
-    background-color: cadetblue;
 }
 
 footer {
     display: flex;
-    background-color: skyblue;
+    background-image: radial-gradient(circle at 105% 68.3%,
+            #2f2246 0%,
+            #b7119b 50%,
+            #702e5f 100%);
+    min-height: 50px;
     align-items: center;
     min-height: 100px;
 
@@ -123,7 +94,3 @@ div.card-body {
     background-color: blanchedalmond;
 }
 
-
-#card_conteiner {
-    background-color: lightcoral;
-}

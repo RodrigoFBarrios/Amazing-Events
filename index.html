@@ -48,32 +48,54 @@
                 </div>
             </div>
         </nav>
-        
-          <aside class="aside-hbar">
+
+        <aside class="aside-hbar">
             <a href="./stats.html" class="btn btn-primary">&lt;</a>
             <p class="navi-here">Home</p>
             <a href="./upcoming_events.html" class="btn btn-primary">&gt;</a>
-          </aside>
-        </header>
+        </aside>
     </header>
-    <main class="flex-grow-1">
-
+    </header>
+    <main class="d-flex flex-grow-1 flex-column">
         <section class="home-section">
-            <h2 class="titulo">Home</h2>
-            <form action="" method="get">
-                <fieldset>
-                    <input type="checkbox" name="category" id="category1">
-                    <label for="category1">Category</label>
-                    <input type="checkbox" name="category" id="category2">
-                    <label for="category2">Category</label>
-                    <input type="checkbox" name="category" id="category3">
-                    <label for="category3">Category</label>
-                    <input type="checkbox" name="category" id="category4">
-                    <label for="category4">Category</label>
-                    <input type="checkbox" name="category" id="category5">
-                    <label for="category5">Category</label>
-                    <label for="busqueda"></label>
-                    <input type="text" name="" id="busqueda">
+            <form class="searching">
+                <fieldset class="category">
+                    <ul class="cat-ul" id="categories">
+                        <li class="check-slide">
+                            <input class="btn-check" type="checkbox" id="cinema" name="category_cinema" checked><label
+                                for="cinema" class="btn btn-outline-secondary"><span
+                                    class="label-chk"></span>Cinema</label>
+                        </li>
+                        <li class="check-slide">
+                            <input class="btn-check" type="checkbox" id="costume" name="category_costume" checked><label
+                                for="costume" class="btn btn-outline-secondary"><span class="label-chk"></span>Costume
+                                Party</label>
+                        </li>
+                        <li class="check-slide">
+                            <input class="btn-check" type="checkbox" id="food" name="category_food" checked><label
+                                for="food" class="btn btn-outline-secondary"><span class="label-chk"></span>Food
+                                Fair</label>
+                        </li>
+                        <li class="check-slide">
+                            <input class="btn-check" type="checkbox" id="marathon" name="category_marathon"
+                                checked><label for="marathon" class="btn btn-outline-secondary"><span
+                                    class="label-chk"></span>Marathon</label>
+                        </li>
+                        <li class="check-slide">
+                            <input class="btn-check" type="checkbox" id="museum" name="category_museum" checked><label
+                                for="museum" class="btn btn-outline-secondary"><span class="label-chk"></span>Museum
+                                Tour</label>
+                        </li>
+                        <li class="check-slide">
+                            <input class="btn-check" type="checkbox" id="music" name="category_music" checked><label
+                                for="music" class="btn btn-outline-secondary">
+                                <span class="label-chk"></span>Music Concert</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset class="text-search" id="id_search">
+                    <input class="input-search form-control" type="text" placeholder="Search"
+                        aria-label="default input example">
                 </fieldset>
             </form>
             <article class="d-flex flex-wrap justify-content-evenly" id="card_conteiner"></article>
@@ -101,7 +123,9 @@
     </main>
     <script src="./scripts/data.js"></script>
     <script src="./scripts/index.js"></script>
-
+    <script src="./scripts/filter.js"></script>
+    <script src="./scripts/checks.js"></script>
+    <script src="./scripts/print_cards.js"></script>
 </body>
 
 </html>
