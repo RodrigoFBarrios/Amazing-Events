@@ -12,3 +12,4 @@ function captureData() {
         notFound('#card_conteiner')
     }
 }
+captureData()

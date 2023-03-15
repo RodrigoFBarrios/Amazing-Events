@@ -1,4 +1,4 @@
-function printChecks(id_etiqueta,array_tipos) {
+/* function printChecks(id_etiqueta,array_tipos) {
     let container = document.querySelector(id_etiqueta)
     array_tipos = array_tipos.map(each=> {
         return `
@@ -12,3 +12,8 @@ function printChecks(id_etiqueta,array_tipos) {
     container.innerHTML = array_tipos.join('')
 }
 printChecks('#checks')
+function captureData(){
+    let input_capture = document.querySelectorAll(`input:checked`)
+    console.log(input_capture);
+} */
+console.log (`test`)
