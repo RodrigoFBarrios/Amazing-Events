@@ -1,9 +1,14 @@
 console.log(data)
 const eventos = data.events
-let cardsDeEventos = []
+
+
+
+
+function printCards(events) {
+  let cardsDeEventos = []
 let numero = 3
 let ancho = `20rem`
-for (let evento of eventos) {
+for (let evento of events) {
   let card = `<div class="card" style="width: ${ancho};">
     <img src="${evento.image}" class="card-img-top" alt="${evento.name}">
     <div class="card-body">
@@ -13,16 +18,13 @@ for (let evento of eventos) {
     </div>
   </div>`
 
-  console.log(card)
+
   cardsDeEventos.push(card)
-
 }
-
-function printCards() {
   let conteiner1 = document.querySelector(`#card_conteiner`)
   conteiner1.innerHTML = cardsDeEventos.join(``)
 }
-printCards()
+printCards(eventos)
 
 
 function printChecks(id_etiqueta, array_eventos) {
@@ -40,7 +42,7 @@ function printChecks(id_etiqueta, array_eventos) {
   })
 
   categories.push(`
-    <fieldset class="text-search" id="id_search">
+    <fieldset class="text-search">
       <input onkeyup="captureData()" id="id_search" class="contact-input" type="text" name="texto" placeholder="search">
     </fieldset>
   `)
@@ -48,8 +50,12 @@ function printChecks(id_etiqueta, array_eventos) {
 }
 printChecks('#checks', data.events)
 function captureData() {
-  let input_capture = document.querySelectorAll(`input:checked`)
-  console.log(input_capture);
+  let input_capture = Array.from( document.querySelectorAll(`input:checked`)).map(category => category.value )//Obtuve todos los valores de los inputs checkeados
+  let search_capture = document.getElementById(`id_search`).value.toLowerCase()// obtuve los valores de los input textos
+  let events = data.events// todos los eventos
+  let events_filters = events.filter(event => event.name.toLowerCase().includes(search_capture) && (input_capture.includes(event.category)||input_capture.length == 0))
+  printCards(events_filters)
+  console.log( events_filters)
 }
 
 
