@@ -1,4 +1,4 @@
-console.log(data)
+/* console.log(data) */
 const eventos = data.events
 let cardsDeEventos = []
 let numero = 3
@@ -14,7 +14,7 @@ for (let evento of eventos) {
     </div>
   </div>`
 
-    console.log(card)
+   /*  console.log(card) */
     cardsDeEventos.push(card)
   }
 }
