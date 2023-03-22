@@ -15,6 +15,47 @@ body {
     width: 5rem;
 }
 
+.aside-hbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    margin: 0px;
+    color: white;
+    background-image: radial-gradient(circle at 105% 68.3%,
+            #2f2246 0%,
+            #b7119b 50%,
+            #702e5f 100%);
+    min-height: 50px;
+}
+
+
+.aside-hbar p {
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 0 0 5px #000000;
+    text-align: center;
+}
+
+.aside-hbar a {
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 4px;
+    height: 40px;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #2f2246;
+    --bs-btn-border-color: #2f2246;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #bc4e9e;
+    --bs-btn-hover-border-color: #7e326a;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #7e326a;
+    --bs-btn-active-border-color: #7e326a;
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #6c757d;
+    --bs-btn-disabled-border-color: #6c757d;
+}
+
 .card-img-top {
     height: 300px;
     object-fit: cover;
@@ -33,52 +74,23 @@ div.card-body {
 
 .home-section {
     display: flex;
-    background-color: lightcoral;
     flex-direction: column;
-
-}
-
-.form-label {
-    margin: 1px;
-    padding: 5px;
-}
-
-.mb-3 {
-    margin: 1px;
-    padding: 1px;
-}
-
-h2 {
-    display: flex;
-    justify-content: center;
-    color: blue;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-transform: capitalize;
-
-}
-
-.titulo-section {
-    color: white;
-}
-
-h5.card-title {
-    color: blue;
-}
-
-.stats-tabla {
-    display: flex;
-    background-color: cadetblue;
 }
 
 footer {
     display: flex;
-    background-color: skyblue;
+    background-image: radial-gradient(circle at 105% 68.3%,
+            #2f2246 0%,
+            #b7119b 50%,
+            #702e5f 100%);
+    min-height: 50px;
     align-items: center;
     min-height: 100px;
 
 
 }
 
-#card_conteiner{
-    background-color: lightcoral;
+div.card-body {
+    background-color: blanchedalmond;
 }
+

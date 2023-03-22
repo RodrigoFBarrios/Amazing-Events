@@ -48,14 +48,17 @@
                 </div>
             </div>
         </nav>
+        <aside class="aside-hbar">
+            <a href="./index.html" class="btn btn-primary">&lt;</a>
+            <p class="navi-here">Upcoming Events</p>
+            <a href="./past_events.html" class="btn btn-primary">&gt;</a>
+        </aside>
     </header>
-    <main>
+    <main class="d-flex flex-grow-1 flex-column">
+        <section>
+            <article class="d-flex flex-wrap justify-content-evenly" id="card_conteiner"></article>
 
-        <section class="home-section">
-            <h2>Upcoming Events</h2>
         </section>
-        <article class="d-flex flex-wrap justify-content-evenly" id="card_conteiner"></article>
-
         <footer>
             <div class="redes">
                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="20" fill="currentColor"
@@ -76,6 +79,7 @@
             </div>
         </footer>
     </main>
+    <script src="./scripts/data.js"></script>
     <script src="./scripts/upcoming_events.js"></script>
 
 </body>

@@ -24,7 +24,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                     <a class="navbar-brand" href="#"><img class="logo" src="./assets/imagen/Logo-Amazing-Events.png"
-                            alt=""></a>
+                            alt="logo"></a>
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" href="./index.html">Home</a>
@@ -48,27 +48,21 @@
                 </div>
             </div>
         </nav>
-    </header>
-    <main class="flex-grow-1">
 
+        <aside class="aside-hbar">
+            <a href="./stats.html" class="btn btn-primary">&lt;</a>
+            <p class="navi-here">Home</p>
+            <a href="./upcoming_events.html" class="btn btn-primary">&gt;</a>
+        </aside>
+    </header>
+    </header>
+    <main class="d-flex flex-grow-1 flex-column">
         <section class="home-section">
-            <h2 class="titulo">Home</h2>
-            <form action="" method="get">
-                <fieldset>
-                    <input type="checkbox" name="category" id="category1">
-                    <label for="category1">Category</label>
-                    <input type="checkbox" name="category" id="category2">
-                    <label for="category2">Category</label>
-                    <input type="checkbox" name="category" id="category3">
-                    <label for="category3">Category</label>
-                    <input type="checkbox" name="category" id="category4">
-                    <label for="category4">Category</label>
-                    <input type="checkbox" name="category" id="category5">
-                    <label for="category5">Category</label>
-                    <label for="busqueda"></label>
-                    <input type="text" name="" id="busqueda">
-                </fieldset>
+            <form class="searching" id="checks">
+               
+                
             </form>
+            <div id="searchResults"></div>
             <article class="d-flex flex-wrap justify-content-evenly" id="card_conteiner"></article>
         </section>
 
@@ -92,8 +86,12 @@
             </div>
         </footer>
     </main>
+    <script src="./scripts/data.js"></script>
     <script src="./scripts/index.js"></script>
-
+    <script src="./scripts/search.js"></script>
+    <!-- <script src="./scripts/checks.js"></script> -->
+    <!--  <script src="./scripts/filter.js"></script> -->
+    <!-- <script src="./scripts/print_cards.js"></script> -->
 </body>
 
 </html>

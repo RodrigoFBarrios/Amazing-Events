@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stat</title>
+    <title>Stats</title>
     <link rel="stylesheet" href="./style/stats.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
@@ -48,40 +48,46 @@
                 </div>
             </div>
         </nav>
+        <aside class="aside-hbar">
+            <a href="./contact.html" class="btn btn-primary">&lt;</a>
+            <p class="navi-here">Stats</p>
+            <a href="./index.html" class="btn btn-primary">&gt;</a>
+        </aside>
     </header>
-    <main class="flex-grow-1">
+    <main class="d-flex flex-grow-1 flex-column">
 
-        <section class="home-section">
-            <h2>Stats</h2>
-        </section>
-        <table class="stats-tabla">
-            <tr>
-                <th colspan="3">Event Static</th>
-            </tr>
-            <tr>
-                <td class="td-evento1">Event with the highest percentage of alttendance</td>
-                <td class="td-evento2">Event with the highest percentage of alttendance</td>
-                <td class="td-evento3">Event with lager capacity</td>
-            </tr>
-            <tr>
-                <th colspan="3">Upcoming Events statistics by category</th>
-            </tr>
-            <tr>
-                <td>categories</td>
-                <td>Revenues</td>
-                <td>Percentage of altendance</td>
-            </tr>
-            <tr>
-                <th colspan="3">Past Event Statistic by Category</th>
-            </tr>
-            <tr>
-                <td>categories</td>
-                <td>Revenues</td>
-                <td>Percentage of altendance</td>
-            </tr>
-        </table>
-
-
+        <div class="container-fluid">
+            <table class="stats-tabla" id="tabla_id">
+                <tr>
+                    <th class="th-static" colspan="2">Event Static</th>
+                </tr>
+                <tr>
+                    <td class="td-evento1">Event with the highest percentage of alttendance: </td>
+                    <td class="td-evento1" id="id_maxAttendanceEvent"></td>
+                    <td class="td-evento1" id="id_maxAttendance"></td>
+                    <td class="td-evento1" id="id_people"></td>
+                    <td class="td-evento2">Event with the highest percentage of alttendance</td>
+                    <td class="td-evento3">Event with lager capacity</td>
+                </tr>
+                <tr>
+                    <th>Upcoming Events statistics by category</th>
+                </tr>
+                <tr>
+                    <td>categories</td>
+                    <td>Revenues</td>
+                    <td>Percentage of altendance</td>
+                </tr>
+                <tr>
+                    <th colspan="3">Past Event Statistic by Category</th>
+                </tr>
+                <tr>
+                    <td>categories</td>
+                    <td>Revenues</td>
+                    <td>Percentage of altendance</td>
+                </tr>
+            </table>
+        </div>
+       
         <footer>
             <div class="redes">
                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="20" fill="currentColor"
@@ -102,9 +108,7 @@
             </div>
         </footer>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
+    <script src="./scripts/stats.js"></script>
 
 </body>
 
