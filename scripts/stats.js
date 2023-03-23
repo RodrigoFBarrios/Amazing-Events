@@ -8,58 +8,65 @@ fetch("https://mindhub-ab35.onrender.com/api/amazing-events")
         let eventWithMaxAttendance = null;
         let minAttendance = 100;
         let eventWithMinAttendance = null;
-        for (let event of data.events) {
-            const attendancePercentage = (event.assistance / event.capacity) * 100;
-            //console.log(attendancePercentage)
-            if (attendancePercentage > maxAttendance) {
-                maxAttendance = attendancePercentage;
-                eventWithMaxAttendance = event;
-            }
-            if (attendancePercentage < minAttendance) {
-                minAttendance = attendancePercentage;
-                eventWithMinAttendance = event;
-            }
-        }
-        console.log(`El evento con el mayor porcentaje de asistencia es: ${eventWithMaxAttendance.name}. Porcentaje de asistencia: ${maxAttendance}%`);
-        console.log(`El evento con el menor porcentaje de asistencia es: ${eventWithMinAttendance.name}. Porcentaje de asistencia: ${minAttendance}%`);
-
-        let id_maxAttendanceEvent = document.getElementById(`id_maxAttendanceEvent`)
-        id_maxAttendanceEvent.innerHTML = eventWithMaxAttendance.name
-
-        let id_people = document.getElementById(`id_people`)
-        id_people.innerHTML = eventWithMaxAttendance.assistance
-
-        let id_maxAttendance = document.getElementById(`id_maxAttendance`)
-        id_maxAttendance.innerHTML = maxAttendance.toFixed(2);
+        let eventWithLargerCapacity = null;
+        let eventFuture = data.events.filter(each => each.date > data.currentDate) 
+        let eventPast = data.events.filter(each => each.date < data.currentDate) 
+        let highAssistance = assistance(eventPast)[0]
+        let lowAssistance = assistance(eventPast).reverse()[0]
+        let mostCapacity = capacity(data.events)
+        
+        
+        printFirstColumn(highAssistance,lowAssistance,mostCapacity )
+        
+     
     })
-    .catch(error => console.error(error));
 
 
-
-
-
-
-
-
-
-
-function printCards(events) {
-    let cardsDeEventos = []
-    let numero = 3
-    let ancho = `20rem`
-    for (let evento of events) {
-        let card = `<div class="card" style="width: ${ancho};">
-      <img src="${evento.image}" class="card-img-top" alt="${evento.name}">
-      <div class="card-body">
-        <h${numero} class="card-title">${evento.name}</h5>
-        <p class="${evento.description}">${evento.description}</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>`
-
-
-        cardsDeEventos.push(card)
+function capacity(array) {
+let array_capacity = array.map(events => {
+    return {
+        capacity: events.capacity, 
+        name: events.name,
     }
-    let conteiner1 = document.querySelector(`#tabla_id`)
-    conteiner1.innerHTML = cardsDeEventos.join(``)
+})
+array_capacity.sort((a, b) => b.capacity - a.capacity)
+return array_capacity[0]
 }
+
+function assistance(array) {
+    let array_assistance = array.map(events => {
+        return {
+            assistance: events.assistance, 
+            name: events.name,
+        }
+    })
+    array_assistance.sort((a, b) => b.assistance - a.assistance)
+   /*  console.log(array_assistance) */
+    return array_assistance
+    }
+
+function printFirstColumn(highAssistance, lowAssistance, capacity){
+    const firstTable = document.getElementById("eventsStatsBody")
+    firstTable.innerHTML = `<tr>
+    <td>${highAssistance.name}</td>
+    <td>${lowAssistance.name}</td>
+    <td>${capacity.name}</td>
+  </tr>
+    
+    `
+}
+
+function category(array) {
+    let array_category = array.map(events => {
+        return {
+            category: events.category, 
+            name: events.name,
+        }
+    })
+    array_category.sort((a, b) => b.category - a.category)
+    console.log(array_category)
+    return array_category[0]
+    }
+
+
+

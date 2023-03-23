@@ -56,9 +56,9 @@ body {
     --bs-btn-disabled-border-color: #6c757d;
 }
 
-.stats-tabla {
-    display: flex;
-
+/* .stats-tabla {
+    /* display: flex; */
+/* 
     background-color: blanchedalmond;
 }
 
@@ -73,7 +73,7 @@ h2 {
     justify-content: center;
     background-color: lightcoral;
 }
-
+ */ */
 
 footer {
     display: flex;
