@@ -55,39 +55,198 @@
         </aside>
     </header>
     <main class="d-flex flex-grow-1 flex-column">
+        <table class="statistics-table table table-success table-striped">
+            <colgroup>
+              <col class="colum-width" />
+              <col class="colum-width" />
+              <col class="colum-width" />
+            </colgroup>
+            <thead class="statistics-head">
+              <tr>
+                <th colspan="3" class="statistics-head-cell">Events statistics</th>
+              </tr>
+              <tr>
+                <th class="sub-head">
+                  Events with the highest percentage of attendance
+                </th>
+                <th class="sub-head">
+                  Events with the lowest percentage of attendance
+                </th>
+                <th class="sub-head">Events with larger capacity</th>
+              </tr>
+            </thead>
+            <tbody class="statistics-body" id="eventsStatsBody">
+              
+            </tbody>
+          </table>
+          <table class="statistics-table table table-success table-striped">
+            <colgroup>
+              <col class="colum-width" />
+              <col class="colum-width" />
+              <col class="colum-width" />
+            </colgroup>
+            <thead class="statistics-head">
+              <tr>
+                <th colspan="3" class="statistics-head-cell">
+                  Upcoming events statistics by category
+                </th>
+              </tr>
+              <tr>
+                <th class="sub-head">Categories</th>
+                <th class="sub-head">Revenues</th>
+                <th class="sub-head">Percentage of attendance</th>
+              </tr>
+            </thead>
+            <tbody class="statistics-body" id="upcomingStatsBody">
+              <tr>
+                <td>Please wait...</td>
+                <td>Please wait...</td>
+                <td>Please wait...</td>
+              </tr>
+              <tr>
+                <td>Please wait...</td>
+                <td>Please wait...</td>
+                <td>Please wait...</td>
+              </tr>
+              <tr>
+                <td>Please wait...</td>
+                <td>Please wait...</td>
+                <td>Please wait...</td>
+              </tr>
+              <tr>
+                <td>Please wait...</td>
+                <td>Please wait...</td>
+                <td>Please wait...</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="statistics-table table table-success table-striped">
+            <colgroup>
+              <col class="colum-width" />
+              <col class="colum-width" />
+              <col class="colum-width" />
+            </colgroup>
+            <thead class="statistics-head">
+              <tr>
+                <th colspan="3" class="statistics-head-cell">
+                  Past Events statistics by category
+                </th>
+              </tr>
+              <tr>
+                <th class="sub-head">Categories</th>
+                <th class="sub-head">Revenues</th>
+                <th class="sub-head">Percentage of attendance</th>
+              </tr>
+            </thead>
+            <tbody class="statistics-body" id="pastStatsBody">
+              <tr>
+                <td>Please wait...</td>
+                <td>Please wait...</td>
+                <td>Please wait...</td>
+              </tr>
+              <tr>
+                <td>Please wait...</td>
+                <td>Please wait...</td>
+                <td>Please wait...</td>
+              </tr>
+              <tr>
+                <td>Please wait...</td>
+                <td>Please wait...</td>
+                <td>Please wait...</td>
+              </tr>
+              <tr>
+                <td>Please wait...</td>
+                <td>Please wait...</td>
+                <td>Please wait...</td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- <table class="statistics-table table table-success table-striped">
+            <colgroup>
+              <col class="colum-width" />
+              <col class="colum-width" />
+              <col class="colum-width" />
+            </colgroup>
+            <thead class="statistics-head">
+              <tr>
+                <th colspan="3" class="statistics-head-cell">
+                  Upcoming events statistics by category
+                </th>
+              </tr>
+              <tr>
+                <th class="sub-head">Categories</th>
+                <th class="sub-head">Revenues</th>
+                <th class="sub-head">Percentage of attendance</th>
+              </tr>
+            </thead>
+            <tbody class="statistics-body" id="upcomingStatsBody">
+              <tr>
+                <td>Please wait...</td>
+                <td>Please wait...</td>
+                <td>Please wait...</td>
+              </tr>
+              <tr>
+                <td>Please wait...</td>
+                <td>Please wait...</td>
+                <td>Please wait...</td>
+              </tr>
+              <tr>
+                <td>Please wait...</td>
+                <td>Please wait...</td>
+                <td>Please wait...</td>
+              </tr>
+              <tr>
+                <td>Please wait...</td>
+                <td>Please wait...</td>
+                <td>Please wait...</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="statistics-table table table-success table-striped">
+            <colgroup>
+              <col class="colum-width" />
+              <col class="colum-width" />
+              <col class="colum-width" />
+            </colgroup>
+            <thead class="statistics-head">
+              <tr>
+                <th colspan="3" class="statistics-head-cell">
+                  Past Events statistics by category
+                </th>
+              </tr>
+              <tr>
+                <th class="sub-head">Categories</th>
+                <th class="sub-head">Revenues</th>
+                <th class="sub-head">Percentage of attendance</th>
+              </tr>
+            </thead>
+            <tbody class="statistics-body" id="pastStatsBody">
+              <tr>
+                <td>Please wait...</td>
+                <td>Please wait...</td>
+                <td>Please wait...</td>
+              </tr>
+              <tr>
+                <td>Please wait...</td>
+                <td>Please wait...</td>
+                <td>Please wait...</td>
+              </tr>
+              <tr>
+                <td>Please wait...</td>
+                <td>Please wait...</td>
+                <td>Please wait...</td>
+              </tr>
+              <tr>
+                <td>Please wait...</td>
+                <td>Please wait...</td>
+                <td>Please wait...</td>
+              </tr>
+            </tbody>
+          </table> -->
 
-        <div class="container-fluid">
-            <table class="stats-tabla" id="tabla_id">
-                <tr>
-                    <th class="th-static" colspan="2">Event Static</th>
-                </tr>
-                <tr>
-                    <td class="td-evento1">Event with the highest percentage of alttendance: </td>
-                    <td class="td-evento1" id="id_maxAttendanceEvent"></td>
-                    <td class="td-evento1" id="id_maxAttendance"></td>
-                    <td class="td-evento1" id="id_people"></td>
-                    <td class="td-evento2">Event with the highest percentage of alttendance</td>
-                    <td class="td-evento3">Event with lager capacity</td>
-                </tr>
-                <tr>
-                    <th>Upcoming Events statistics by category</th>
-                </tr>
-                <tr>
-                    <td>categories</td>
-                    <td>Revenues</td>
-                    <td>Percentage of altendance</td>
-                </tr>
-                <tr>
-                    <th colspan="3">Past Event Statistic by Category</th>
-                </tr>
-                <tr>
-                    <td>categories</td>
-                    <td>Revenues</td>
-                    <td>Percentage of altendance</td>
-                </tr>
-            </table>
-        </div>
-       
+
+        <!-- </div> -->
+
         <footer>
             <div class="redes">
                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="20" fill="currentColor"
@@ -108,7 +267,7 @@
             </div>
         </footer>
     </main>
-    <script src="./scripts/stats.js"></script>
+     <script src="./scripts/stats.js"></script>
 
 </body>
 
